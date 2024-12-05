@@ -1,0 +1,121 @@
+@model PaginatedList<ToursViewModel>
+
+<form asp-action="Index">
+    <div class="d-flex">
+        <input class="form-control" placeholder="Search..." value="@ViewData["CurrentFilter"]" type="text"
+            autocomplete="off" name="SearchString" />
+        <select name="CategoryId" class="form-select" asp-items="ViewBag.CategoryId">
+            <option value="">-- Select Category --</option>
+        </select>
+        <button type="submit" class="btn btn-primary">Filter</button>
+    </div>
+</form>
+<p>
+    <a asp-action="Create">Create New</a>
+</p>
+<style>
+    th {
+        color: black !important;
+    }
+</style>
+<table class="table">
+    <thead>
+        <tr>
+            <th style="color:darken">
+                <a asp-action="Index" asp-route-sortOrder="@ViewData["TourNameSortParm"]"
+                    asp-route-currentFilter="@ViewData["CurrentFilter"]" style="color:darken">
+                    @Html.DisplayNameFor(model => model[0].TourName)
+                </a>
+            </th>
+            <th>
+                <a asp-action="Index" asp-route-sortOrder="@ViewData["PlaceTourSortParm"]"
+                    asp-route-currentFilter="@ViewData["CurrentFilter"]">
+                    @Html.DisplayNameFor(model => model[0].PlaceTour)
+                </a>
+            </th>
+            <th>
+                <a asp-action="Index" asp-route-sortOrder="@ViewData["PeriodSortParm"]"
+                    asp-route-currentFilter="@ViewData["CurrentFilter"]">
+                    @Html.DisplayNameFor(model => model[0].Period)
+                </a>
+            </th>
+            <th>
+                <a asp-action="Index" asp-route-sortOrder="@ViewData["PriceSortParm"]"
+                    asp-route-currentFilter="@ViewData["CurrentFilter"]">
+                    @Html.DisplayNameFor(model => model[0].Price)
+                </a>
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model[0].DescriptionTour)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model[0].ScheduledTour)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model[0].DateCreated)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model[0].CategoryId)
+            </th>
+            <th>@Html.DisplayNameFor(model => model[0].Image)</th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.TourName)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.PlaceTour)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Period)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Price)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.DescriptionTour)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.ScheduledTour)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.DateCreated)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.CategoryId)
+                </td>
+                <td>
+                    @if (!string.IsNullOrEmpty(item.ImagePath))
+                    {
+                        <img width="50" height="50" style="object-fit: cover;" src="@item.ImagePath"
+                            alt="Image for @item.CategoryName">
+                    }
+
+                </td>
+                <td class="btn-group">
+                    <a class="btn btn-primary" asp-action="Edit" asp-route-id="@item.Id">Edit</a>
+                    <a class="btn btn-info" asp-action="Details" asp-route-id="@item.Id">Details</a>
+                    <a class="btn btn-danger" asp-action="Delete" asp-route-id="@item.Id">Delete</a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
+@{
+    var prevDisabled = !Model.HasPreviousPage ? "disabled" : "";
+    var nextDisabled = !Model.HasNextPage ? "disabled" : "";
+}
+
+<a asp-action="Index" asp-route-sortOrder="@ViewData["CurrentSort"]" asp-route-pageNumber="@(Model.PageIndex - 1)"
+    asp-route-currentFilter="@ViewData["CurrentFilter"]" class="btn btn-default @prevDisabled">
+    Previous
+</a>
+<a asp-action="Index" asp-route-sortOrder="@ViewData["CurrentSort"]" asp-route-pageNumber="@(Model.PageIndex + 1)"
+    asp-route-currentFilter="@ViewData["CurrentFilter"]" class="btn btn-default @nextDisabled">
+    Next
+</a>
