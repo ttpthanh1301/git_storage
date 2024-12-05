@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "og/8DZI7JaXvIpH+bJcH9D4kCzLIYgkqlD80GjkDMec=",
+  "Hash": "ZKGgpF9yMape8C0lz5t4F1zKl0HsGKgDNNzxOYrnlEE=",
   "Source": "TourWebsite",
   "BasePath": "_content/TourWebsite",
   "Mode": "Default",
@@ -42556,6 +42556,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot/user-content/0e5263f6-a74e-47fc-ac90-388650bcc338.png"
+    },
+    {
+      "Identity": "/Users/tranthanh/Documents/Workspaces/Dotnet/TourWebsite/wwwroot/user-content/44f13a03-d65f-4a67-be9e-b2302614a70b.png",
+      "SourceId": "TourWebsite",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/tranthanh/Documents/Workspaces/Dotnet/TourWebsite/wwwroot/",
+      "BasePath": "_content/TourWebsite",
+      "RelativePath": "user-content/44f13a03-d65f-4a67-be9e-b2302614a70b.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/user-content/44f13a03-d65f-4a67-be9e-b2302614a70b.png"
     }
   ]
 }

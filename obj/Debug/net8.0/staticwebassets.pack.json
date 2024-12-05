@@ -8953,6 +8953,10 @@
       "PackagePath": "staticwebassets/user-content/0e5263f6-a74e-47fc-ac90-388650bcc338.png"
     },
     {
+      "Id": "/Users/tranthanh/Documents/Workspaces/Dotnet/TourWebsite/wwwroot/user-content/44f13a03-d65f-4a67-be9e-b2302614a70b.png",
+      "PackagePath": "staticwebassets/user-content/44f13a03-d65f-4a67-be9e-b2302614a70b.png"
+    },
+    {
       "Id": "obj/Debug/net8.0/staticwebassets/msbuild.TourWebsite.Microsoft.AspNetCore.StaticWebAssets.props",
       "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
     },

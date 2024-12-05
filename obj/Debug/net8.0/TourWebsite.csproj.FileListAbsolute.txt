@@ -254,3 +254,17 @@
 /Users/tranthanh/Documents/Workspaces/Dotnet/TourWebsite/bin/Debug/net8.0/AutoMapper.dll
 /Users/tranthanh/Documents/Workspaces/Dotnet/TourWebsite/bin/Debug/net8.0/AutoMapper.Extensions.Microsoft.DependencyInjection.dll
 /Users/tranthanh/Documents/Workspaces/Dotnet/TourWebsite/bin/Debug/net8.0/X.PagedList.dll
+/Users/tranthanh/Documents/Workspaces/Dotnet/TourWebsite/obj/Debug/net8.0/TourWebsite.MvcApplicationPartsAssemblyInfo.cs
+/Users/tranthanh/Documents/Workspaces/Dotnet/TourWebsite/bin/Debug/net8.0/Google.Api.CommonProtos.dll
+/Users/tranthanh/Documents/Workspaces/Dotnet/TourWebsite/bin/Debug/net8.0/Google.Protobuf.dll
+/Users/tranthanh/Documents/Workspaces/Dotnet/TourWebsite/bin/Debug/net8.0/Grpc.AspNetCore.Server.dll
+/Users/tranthanh/Documents/Workspaces/Dotnet/TourWebsite/bin/Debug/net8.0/Grpc.Core.Api.dll
+/Users/tranthanh/Documents/Workspaces/Dotnet/TourWebsite/bin/Debug/net8.0/Grpc.Net.Common.dll
+/Users/tranthanh/Documents/Workspaces/Dotnet/TourWebsite/bin/Debug/net8.0/Microsoft.AspNetCore.Grpc.JsonTranscoding.dll
+/Users/tranthanh/Documents/Workspaces/Dotnet/TourWebsite/bin/Debug/net8.0/Microsoft.AspNetCore.Grpc.Swagger.dll
+/Users/tranthanh/Documents/Workspaces/Dotnet/TourWebsite/bin/Debug/net8.0/Microsoft.OpenApi.dll
+/Users/tranthanh/Documents/Workspaces/Dotnet/TourWebsite/bin/Debug/net8.0/Swashbuckle.AspNetCore.Swagger.dll
+/Users/tranthanh/Documents/Workspaces/Dotnet/TourWebsite/bin/Debug/net8.0/Swashbuckle.AspNetCore.SwaggerGen.dll
+/Users/tranthanh/Documents/Workspaces/Dotnet/TourWebsite/bin/Debug/net8.0/Swashbuckle.AspNetCore.SwaggerUI.dll
+/Users/tranthanh/Documents/Workspaces/Dotnet/TourWebsite/bin/Debug/net8.0/Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll
+/Users/tranthanh/Documents/Workspaces/Dotnet/TourWebsite/bin/Debug/net8.0/Microsoft.AspNetCore.Authentication.JwtBearer.dll
